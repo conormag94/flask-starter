@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Flask starter project</title>
+    {% else %}
+    <title>Welcome to Flask starter project</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Navbar goes here</div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
